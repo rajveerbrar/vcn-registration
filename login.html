@@ -1,0 +1,82 @@
+
+<!doctype html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>VCN Registration Form</title>
+		<link rel="stylesheet" href="http://jqueryvalidation.org/files/demo/site-demos.css">
+	</head>
+	<body>
+		<form id="vcnForm" method="post" action="">
+			<div id="info">
+				<label for="names"><b>Legal First and Last Name:*</b></label><br/>
+				<input type="text" class="left" id="names" name="names">
+				<br/>
+				<label for="phone1"><b>Phone Number(Day):*</b></label>
+				<br/>
+				<input type="text" class="left" id="phone1" name="phone1">
+				<br/>
+			</div>
+			<div id="acco_info">
+				<h3> Account Information Session</h3>
+				<p>Enter a login id between 3 and 8 characters long. The first character must be a letter but the rest may be either letters or numbers.No UPPER CASE letters</br>  or punctuation is allowed. Remember, your login id is the first part of your e-mail address so make sure you choose wisely. (ie. login@vcn.bc.ca).</p>
+				<label for="login"><b> Login:*</b></label>
+				<br />
+				<input type="text" class="left" id="login" name="login">
+				<br />
+				<label for="password"><b> Password:*</b></label>
+				<br />
+				<input type="text" class="left" id="password" name="password">
+				<br />
+			</div>
+			<div id="passwordinfo">
+				<h3> Password Problem Section</h3>
+				<p>It is a good idea, for security reasons, to change your password regularly.But, if you ever forget your password, the following information will allow us to verify your identity over<br /> the phone and reset your password to the one you choose above. Your keyword should be something that you will not forget such as your mothers maiden name or birthdate.</p>
+				<label for="birth_contact"><b> Birthdate(mm/dd/yy):*</b></label>
+				<br />
+				<input type="text" class="left" id="birth_contact" name="birth_contact">
+				<br />
+				<label for="keyword"><b>Current email address, mothers maiden name, or another keyword*:</b></label>
+				<br />
+				<input type="text" class="left" id="keyword" name="keyword">
+				<br />
+			</div>
+			<div id="optionalfields">
+				<p>These fields are optional for email service. </p>
+				<label for="address1"><b>Address Line 1:*</b></label>
+				<br/>
+				<input type="text" class="left" id="address1" name="address1">
+				<br/>
+				<label for="address2"><b>Address Line 2:</b></label>
+				<br/>
+				<input type="text" class="left" id="address2" name="address2">
+				<br/>
+				<label for="city"><b>City:*</b></label>
+				<br/>
+				<input type="text" class="left" id="city" name="city">
+				<br/>
+				<label for="province"><b>Province:*</b></label>
+				<br/>
+				<input type="text" class="left" id="province" name="province">
+				<br/>
+				<label for="postalcode"><b>Postal Code:*</b></label>
+				<br/>
+				<input type="text" class="left" id="postalcode" name="postalcode">
+				<br/>
+				<label for="country"><b>Country:*</b></label>
+				<br/>
+				<input type="text" class="left" id="country" name="country">
+				<br/>
+			</div>
+			<input type="submit" id="Submit" value="Validate!">
+			<br />
+		</form>
+
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://jqueryvalidation.org/files/dist/jquery.validate.min.js"></script>
+		<script src="http://jqueryvalidation.org/files/dist/additional-methods.min.js"></script>
+		<script type="text/javascript" src="login.js">
+		</script>
+	</body>
+</html>
